@@ -2,7 +2,7 @@ from openai import OpenAI
 import time
 
 # Initialize the OpenAI client to interact with api
-client = OpenAI(api_key='sk-proj-4ahxeEw12MgwlzMkwJkMT3BlbkFJpohecZTmZSX3FTF3bI3M')
+client = OpenAI(api_key='INSERT API KEY HERE')
 
 # Upload the fine-tuning file
 try:
