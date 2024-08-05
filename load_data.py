@@ -3,13 +3,13 @@ from sqlalchemy import create_engine, text
 
 # Reads CSV file into pandas dataframe using 'latin1' encoding
 # Adjust the encoding if necessary
-df = pd.read_csv('news_articles.csv', encoding='latin1')  # Replace 'latin1' with the correct encoding if needed
+df = pd.read_csv('your_csv_file.csv', encoding='latin1')  # Replace 'latin1' with the correct encoding if needed
 
 # Save the DataFrame to a new CSV file with UTF-8 encoding
-df.to_csv('news_articles_utf8.csv', index=False, encoding='utf-8') #index=False ensures Dataframe's index not written to csv file
+df.to_csv('your_csv_file_utf8.csv', index=False, encoding='utf-8') #index=False ensures Dataframe's index not written to csv file
 
 # Re-load the CSV file with UTF-8 encoding into another dataframe
-df_utf8 = pd.read_csv('news_articles_utf8.csv', encoding='utf-8')
+df_utf8 = pd.read_csv('your_csv_file_utf8.csv', encoding='utf-8')
 
 # Create a connection to PostgreSQL
 engine = create_engine('postgresql://users:password@localhost:5432/postgres')
