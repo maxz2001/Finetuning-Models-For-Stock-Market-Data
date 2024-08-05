@@ -3,7 +3,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 # Create a connection to PostgreSQL
-engine = create_engine('postgresql://postgres:Personic1!@localhost:5432/postgres')
+engine = create_engine('postgresql://users:password@localhost:5432/postgres')
 
 # Load the data into a DataFrame
 df = pd.read_sql("SELECT complete_article_text, symbol, title FROM articles", engine)
