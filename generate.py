@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 # Initialize the OpenAI client
-client = OpenAI(api_key='sk-proj-4ahxeEw12MgwlzMkwJkMT3BlbkFJpohecZTmZSX3FTF3bI3M')
+client = OpenAI(api_key='#INSERT API KEY HERE')
 
 def get_fine_tuned_model_id(): # retrieve id of most recent fine-tuned model
     # Retrieve the list of fine-tuning jobs from OpenAI API
