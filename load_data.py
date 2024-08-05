@@ -12,7 +12,7 @@ df.to_csv('news_articles_utf8.csv', index=False, encoding='utf-8') #index=False 
 df_utf8 = pd.read_csv('news_articles_utf8.csv', encoding='utf-8')
 
 # Create a connection to PostgreSQL
-engine = create_engine('postgresql://postgres:Personic1!@localhost:5432/postgres')
+engine = create_engine('postgresql://users:password@localhost:5432/postgres')
 
 # Write DataFrame to PostgreSQL in table called 'articles', this will create the table if it doesn't exist
 df_utf8.to_sql('articles', engine, index=False, if_exists='replace')
